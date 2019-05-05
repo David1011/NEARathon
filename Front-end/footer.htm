@@ -1,0 +1,18 @@
+﻿<div class="footer clearfix">
+    <div class="footer-wrap">
+        <p>
+            <a href="<!--{$site.url}-->"><!--{$site.name}--></a>
+            <!--{$site.description}-->
+        </p>
+        <p>Whitepaper </p>
+        <p>Copyright &copy; 2018-2019 <a href="<!--{$site.url}-->" target="_blank"><!--{$site.name}--></a>.
+        	All rights reserved. Powered by <a href="https://www.google.com/" target="_blank">Clavo <!--{$iCMS.CONST.iCMS_VERSION}-->.</a>
+			<!--{if $site.icp}--><b>ABN: </b><!--{$site.icp}--><!--{/if}-->
+        </p>
+    </div>
+</div>
+<div class="hide">
+<!--{$site.code|htmlspecialchars_decode}-->
+</div>
+<!--{include file="iCMS://public.dialog.htm"}-->
+<!--{iCMS:public:crontab}-->
