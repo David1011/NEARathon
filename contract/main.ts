@@ -1,6 +1,10 @@
 // src/main.js
 ?
 // Loads nearlib and this contract into nearplace scope.
+
+
+// The initial function is from a sample of NEAR Protocol tutorials.
+
 let self = this;
 
 let owner;
@@ -152,7 +156,7 @@ async function ApproveAndCallFallBack {
 
 // ----------------------------------------------------------------------------
 
-    // Constructor
+    // Constructor of Clavo token on blockchain
 
     // ------------------------------------------------------------------------
 
@@ -305,7 +309,7 @@ async function ApproveAndCallFallBack {
 
         Approval(sender, spender, tokens);
 
-        ApproveAndCallFallBack(spender).receiveApproval(msg.sender, tokens, this, data);
+        ApproveAndCallFallBack(spender).receiveApproval(sender, tokens, this, data);
 
         return true;
 
